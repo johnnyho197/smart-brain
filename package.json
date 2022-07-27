@@ -1,5 +1,6 @@
 {
   "name": "facerecognitionbrain",
+  "homepage": "https://johnnyho197.github.io/smart-brain",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
