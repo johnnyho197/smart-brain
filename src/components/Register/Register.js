@@ -44,7 +44,7 @@ class Register extends React.Component {
       return;
     }
     setTimeout(()=>{
-      fetch('http://localhost:3000/register', {
+      fetch('https://arcane-island-25206-23d9d6621691.herokuapp.com/register', {
         method: 'post',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
