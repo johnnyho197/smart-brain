@@ -1,2 +1,1 @@
-# face-recognition-brain
-Final project for Udemy course
+Run npm install to install the project
