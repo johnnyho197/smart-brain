@@ -66,7 +66,7 @@ class App extends Component {
     
     this.setState({isImageValid: true})
     this.setState({imageUrl: this.state.input});
-      fetch('https://arcane-island-25206-23d9d6621691.herokuapp.com/imageurl', {
+      fetch('https://smart-brain-api-c63a.onrender.com/imageurl', {
         method: 'post',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
@@ -81,7 +81,7 @@ class App extends Component {
       })
       .then(response => {
         if (response) {
-          fetch('https://arcane-island-25206-23d9d6621691.herokuapp.com/image', {
+          fetch('https://smart-brain-api-c63a.onrender.com/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -118,7 +118,7 @@ class App extends Component {
     const { isSignedIn, imageUrl, route, box } = this.state;
     return (
       <div className="App">
-        <ParticlesBg type="circle" bg={true} />
+        <ParticlesBg type="polygon" bg={true} />
         <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
         { route === 'home'
           ? <div>
